@@ -1,0 +1,115 @@
+{
+	"variables": [],
+	"info": {
+		"name": "sugarbox",
+		"_postman_id": "810f4a19-c2c3-5bcd-c00b-3663374e2765",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post user",
+			"request": {
+				"url": "http://localhost:8000/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"sandeep@gmail.com\",\n\t\"password\" : \"sandeep_2021\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8000/users?limit=1&index=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "index",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "sugarbox",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get one user",
+			"request": {
+				"url": "http://localhost:8000/user/6127ad81e70a820e81ad0dca",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete one user",
+			"request": {
+				"url": "http://localhost:8000/user/6127ad81e70a820e81ad0dca",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"url": "http://localhost:8000/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"sandeep@gmail.com\",\n\t\"password\" : \"sandeep_2021\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

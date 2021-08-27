@@ -9,6 +9,6 @@ config.db = {
   'name': process.env.DB_NAME || 'sugarbox'
 }
 
-config.secret = process.env.SECRET || 'mock#secret'
+config.secret = process.env.SECRET || 'sugarbox'
 
 module.exports = config;
