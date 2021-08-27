@@ -1,0 +1,32 @@
+{
+  "name": "sugarbox-api-codebase",
+  "version": "1.0.0",
+  "description": "An assignment task for sugarbox interview",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha ./tests/*.js",
+    "start": "node app.js"
+  },
+  "author": "Sandeep Bashetti",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "fs-extra": "^6.0.1",
+    "include-all": "^4.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.1",
+    "morgan": "^1.9.0",
+    "multer": "^1.4.2",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.0",
+    "supertest": "^6.1.6"
+  }
+}
